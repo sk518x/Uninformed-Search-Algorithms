@@ -4,7 +4,7 @@ from id_dfs import iddfs
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# Your graph
+# Graph
 graph = {'A': ['B','C'],
          'B': ['D','E'],
          'C': ['F'],
@@ -24,7 +24,7 @@ for node, neighbors in graph.items():
 
 # Draw
 plt.figure(figsize=(6, 5))
-pos = nx.spring_layout(G)  # auto layout
+pos = nx.spring_layout(G)  
 
 nx.draw(
     G, pos,
